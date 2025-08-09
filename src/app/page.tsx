@@ -8,7 +8,7 @@ export default function Home() {
             BLDR <span className="text-purple-400">VZN</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Building the future of construction project management with AI-powered insights and streamlined workflows.
+            Transforming how you manage and execute your vision with AI-powered insights and streamlined workflows.
           </p>
         </header>
 
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="text-xl font-semibold text-white mb-3">Development</h3>
-              <p className="text-gray-400 mb-4">Start building your construction management platform</p>
+              <p className="text-gray-400 mb-4">Start building your vision management platform</p>
               <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors">
                 View Documentation
               </button>
