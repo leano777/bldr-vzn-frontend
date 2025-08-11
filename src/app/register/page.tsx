@@ -115,9 +115,9 @@ export default function Register() {
         router.push('/login');
       }, 2000);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Registration error:', error);
-      setError(error.message || 'Registration failed. Please try again.');
+      setError((error as Error).message || 'Registration failed. Please try again.');
     } finally {
       setIsLoading(false);
     }

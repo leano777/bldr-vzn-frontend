@@ -89,9 +89,9 @@ export default function Login() {
         router.push('/dashboard');
       }, 1000);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Login error:', error);
-      setError(error.message || 'Login failed. Please check your credentials.');
+      setError((error as Error).message || 'Login failed. Please check your credentials.');
     } finally {
       setIsLoading(false);
     }
@@ -137,9 +137,9 @@ export default function Login() {
         router.push('/dashboard');
       }, 1000);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Demo login error:', error);
-      setError(error.message || `${userType} login failed.`);
+      setError((error as Error).message || `${userType} login failed.`);
     } finally {
       setIsLoading(false);
     }
@@ -248,7 +248,7 @@ export default function Login() {
           {/* Register Link */}
           <div className="mt-6 text-center">
             <p className="text-gray-400 text-sm">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link href="/register" className="text-purple-400 hover:text-purple-300 font-medium">
                 Create one
               </Link>

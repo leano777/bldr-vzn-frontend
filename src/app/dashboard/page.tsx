@@ -42,7 +42,7 @@ export default function Dashboard() {
 
         const userData: User = await response.json();
         setUser(userData);
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error('Failed to fetch user data:', error);
         setError('Failed to load user data');
         // Redirect to login if token is invalid
